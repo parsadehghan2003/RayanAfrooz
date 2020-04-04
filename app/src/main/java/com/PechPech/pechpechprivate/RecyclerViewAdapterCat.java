@@ -12,13 +12,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.ghamardaraghrab.Activities.ActivityArticle;
-import com.example.ghamardaraghrab.Activities.ActivityShowVideo;
-import com.example.ghamardaraghrab.Model.CatDataModel;
-import com.squareup.picasso.Picasso;
-
-import java.util.List;
-
 
 public class RecyclerViewAdapterCat extends  RecyclerView.Adapter<RecyclerViewAdapterCat.ViewHolder>{
 

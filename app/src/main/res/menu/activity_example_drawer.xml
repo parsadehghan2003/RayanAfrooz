@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/app_bar_switch_notification"
+        app:actionLayout="@layout/switch_item"
+        android:icon="@drawable/ic_notification"
+        android:title="@string/key_get_notification" />
+        <item
+            android:id="@+id/nav_change_password"
+            android:icon="@drawable/password_change"
+            android:title="@string/key_change_password" />
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_exit"
+            android:title="@string/key_exit" />
+</menu>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/linearlayoutRow"
+    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" android:translationZ="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="10.0dip" app:contentPadding="10.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_des"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8.0dip"
+                android:layout_marginTop="8.0dip"
+                android:layout_marginEnd="24.0dip"
+                android:fontFamily="@font/far_khodkar"
+                android:lines="2"
+                android:textColor="#ff000000"
+                android:textSize="18.0sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/checkBox"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8.0dip"
+                android:layout_marginTop="8.0dip"
+                android:fontFamily="@font/far_khodkar"
+                android:gravity="start"
+                android:textColor="#9e000000"
+                android:textSize="12.0sp"
+                app:layout_constraintEnd_toEndOf="@id/txt_des"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_des" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:visibility="visible"
+                app:buttonTint="#ff000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageView12"
+                android:layout_width="9.0dip"
+                android:layout_height="9.0dip"
+                android:layout_marginTop="24.0dip"
+                android:layout_marginEnd="8.0dip"
+                android:tint="#ff14d7f0"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@id/txt_des"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/txt_des"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@android:drawable/presence_invisible" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

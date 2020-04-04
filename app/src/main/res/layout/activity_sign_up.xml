@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layoutDirection="ltr">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@id/edt_username_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20.0dip"
+        android:layout_marginEnd="20.0dip"
+        android:layout_marginBottom="15.0dip"
+        android:orientation="horizontal"
+        app:errorEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:startIconDrawable="@drawable/ic_phone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_username"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fontFamily="@font/far_khodkar"
+            android:hint="@string/username_key"
+            android:imeActionLabel="@string/username_key"
+            android:inputType="phone|textShortMessage"
+            android:nextFocusDown="@id/edt_password"
+            app:endIconMode="password_toggle"
+            app:errorEnabled="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edt_password_layout1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15.0dip"
+        app:errorEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/edt_username_layout"
+        app:layout_constraintStart_toStartOf="@id/edt_username_layout"
+        app:layout_constraintTop_toBottomOf="@id/edt_username_layout"
+        app:layout_constraintVertical_bias="0.0"
+        app:startIconDrawable="@drawable/ic_password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_password1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="50.0dip"
+            android:ems="10"
+            android:fontFamily="@font/far_khodkar"
+            android:foregroundGravity="left"
+            android:hint="@string/password_key"
+            android:inputType="textPassword"
+            android:textAlignment="textStart"
+            android:textDirection="ltr" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edt_password_layout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15.0dip"
+        app:errorEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/edt_username_layout"
+        app:layout_constraintStart_toStartOf="@id/edt_username_layout"
+        app:layout_constraintTop_toBottomOf="@id/edt_password_layout1"
+        app:layout_constraintVertical_bias="0.0"
+        app:startIconDrawable="@drawable/ic_password_confirm">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_password2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="50.0dip"
+            android:ems="10"
+            android:fontFamily="@font/far_khodkar"
+            android:foregroundGravity="left"
+            android:hint="@string/key_confirm_password"
+            android:inputType="textPassword"
+            android:nextFocusDown="@id/btn_login"
+            android:textAlignment="textStart"
+            android:textDirection="ltr" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edt_code_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15.0dip"
+        app:errorEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/edt_password_layout2"
+        app:layout_constraintStart_toStartOf="@id/edt_password_layout2"
+        app:layout_constraintTop_toBottomOf="@id/edt_password_layout2"
+        app:layout_constraintVertical_bias="0.0"
+        app:startIconDrawable="@drawable/ic_code">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sp_positions"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="50.0dip"
+            android:ems="10"
+            android:fontFamily="@font/far_khodkar"
+            android:foregroundGravity="left"
+            android:hint="@string/key_code"
+            android:inputType="textPassword"
+            android:nextFocusDown="@id/btn_login"
+            android:textAlignment="textStart"
+            android:textDirection="ltr" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_sign_up"
+        android:layout_width="0.0dip"
+        android:layout_height="60.0dip"
+        android:layout_marginStart="50.0dip"
+        android:layout_marginEnd="50.0dip"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/far_khodkar"
+        android:text="@string/sign_up_key"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/edt_code_layout"
+        app:layout_constraintStart_toStartOf="@id/edt_code_layout"
+        app:layout_constraintTop_toBottomOf="@id/edt_code_layout"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:foregroundGravity="right"
+        android:minHeight="?actionBarSize"
+        android:theme="@style/AppTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:subtitleTextAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:subtitleTextColor="#ffffffff"
+        app:title="@string/sign_up_key"
+
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:titleTextColor="#ffffffff" />
+</androidx.constraintlayout.widget.ConstraintLayout>
